@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.refael92.mivnetochna.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:id="@+id/registerIvProfile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignLeft="@+id/constraintLayout"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/constraintLayout"
+                android:contentDescription="@string/profile_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/proflie" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/registerTvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/constraintLayout"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/registerEtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/registerTvUsername"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorLink="@android:color/holo_orange_dark" />
+
+        <TextView
+            android:id="@+id/registerTvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/registerEtUsername"
+            android:layout_marginTop="20dp"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/registerEtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/registerTvPassword"
+            android:ems="10"
+            android:hint="@string/_6_10_characters"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHighlight="@android:color/holo_orange_dark"
+            android:textColorLink="@android:color/holo_orange_dark" />
+
+        <TextView
+            android:id="@+id/registerTvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/registerEtPassword"
+            android:layout_marginTop="18dp"
+            android:text="@string/name" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/registerTvName"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/registerEtFname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColorLink="@android:color/holo_orange_dark" />
+
+            <EditText
+                android:id="@+id/registerEtLname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColorLink="@android:color/holo_orange_dark" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/registerTvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="17dp"
+            android:text="@string/address" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/registerTvAddress"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/registerEtCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/city"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColorLink="@android:color/holo_orange_dark" />
+
+            <EditText
+                android:id="@+id/registerEtStreet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/street"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColorLink="@android:color/holo_orange_dark" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/registerTvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="16dp"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/registerEtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/registerTvEmail"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColorLink="@android:color/holo_orange_dark" />
+
+        <Button
+            android:id="@+id/registerBtnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/registerEtEmail"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="@string/sign_up" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
